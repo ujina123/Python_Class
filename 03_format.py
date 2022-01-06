@@ -1,5 +1,37 @@
-# format() 함수
-# 포멧 형식 : format(실수, '전체자리수.소수이하자리수<서식기호>')
+''' 
+< format() 함수 >
+포멧 형식 : format(실수, '전체자리수.소수이하자리수<서식기호>')
+
+# '''
+# % 서식 문자열
+
+print('Name: {0}, Phone: {1}'.format('kmlee','123-445'))
+
+name = 'kmlee'
+phone = '123-1234'
+s = name+phone
+print(s)
+s1 = '%d %5d %05d' %(123,123,123)
+s2 = '{0:d} {1:5d} {2:05d}'.format(123,123,123)
+print('이름은 {}이고, 폰번호는 {}이다.'.format(name,phone))
+print(f'이름은 {name}이고, 폰번호는 {phone}입니다.')
+
+# f'string
+tea = 'coffee'
+n = 5
+s3 = f'나는 {tea}를 좋아해요. 하루에 {n}잔 마셔요.'
+
+for month in ['1월','2월','3월']:
+    print(f'이번달은 {month}입니다.')
+
+# string.format()
+# 1) '문자열 {위치인덱스}'.format(변수)
+print('Name:{0}, Phone:{1}'.format('kmlee',1234-123))
+s2 = '{0:d} {1:5d} {2:05d}'.format(123,123,123)
+
+# 2) '문자열 {변수}'.format(변수 = 값)
+print('이름은 {name}이고, 폰번호는 {phone}'.format(name = '이몽룡',phone = '123-111'))
+
 
 # 실습 ) 총점과 평균을 구해서 출력
 kor = 90
