@@ -47,3 +47,19 @@ print(lan.lower()) # python programming
 print(lan.capitalize()) # Python programming
 print(lan.swapcase()) # PYTHON pROGRAMMING
 print(lan.title()) # Python Programming
+
+'''
+문자열 정렬 : 정렬 문자 <,>,^
+문자 : 왼쪽 정렬, 숫자 : 오른쪽 정렬
+< : 왼쪽 정렬
+
+ljust(자릿수) : 왼쪽 정렬
+rjust() : 오른쪽 정렬
+center() : 가운데 정렬
+'''
+string = 'python'
+num = 1234
+print(string)
+print('{:<10}'.format(string)) # 전체 10자리로 해서 왼쪽 정렬 해라
+print('{:>10}'.format(string)) # 전체 10자리로 해서 오른쪽 정렬 해라
+print(num)
